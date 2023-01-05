@@ -1,4 +1,4 @@
-# plafonds
+# Dutch energy plafonds
 Home-assistant python script for the Dutch energy plafonds in 2023.
 
 This script can generate 6 todays plafonds for gas and electricity. 
