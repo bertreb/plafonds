@@ -13,8 +13,8 @@ You can select which of the plafond you want to use.
 Instructions for using this script
 1. put the script 'plafond.py' in the HA directory /config/python_scripts (create, if it doesn't excist)
 2. add the content of 'services.yaml' to the file 'services.yaml' in the HA directory /config/python_scripts
-3. Reload the 'python_script' in HA
-4. created the plafond sensors you want. I used a template sensor with the following structure for the daily gas plafond (template.yaml)
+3. Reload the 'python_script' in HA (development tool->yaml-configuration -> reload python scripts)
+4. Create the plafond sensors you want. I used a template sensor with the following structure for the daily gas plafond (template.yaml)
 ```
 - sensor:
   - name: gasplafond dag
@@ -56,6 +56,6 @@ action:
 mode: restart
 ```
 
-6. Reload the automation.
-7. The sensor values should be updated to todays values
+6. Reload the automation (development tool->yaml-configuration -> reload automations)
+7. The sensor values should be updated to todays plafond values
 
