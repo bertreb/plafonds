@@ -11,7 +11,7 @@ This script can generate 6 todays plafonds for gas and electricity.
 You can select which of the plafond you want to use.
 
 Instructions for using this script
-1. put the script 'plafond.py' in the HA directory /config/python_scripts (create it if it doesn't excist)
+1. put the script 'plafond.py' in the HA directory /config/python_scripts (create, if it doesn't excist)
 2. add the content of 'services.yaml' to the file 'services.yaml' in the HA directory /config/python_scripts
 3. Reload the 'python_script' in HA
 4. created the plafond sensors you want. I used a template sensor with the following structure for the daily gas plafond (template.yaml)
