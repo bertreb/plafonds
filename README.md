@@ -2,12 +2,12 @@
 Home-assistant python script for the Dutch energy plafonds in 2023.
 
 This script can generate 6 todays plafonds for gas and electricity. 
-1. gas, today
-2. gas, today - cummulative for the month
-3. gas, today - cummulatief for the year
-4. electricity, today
-5. electricity, today - cummulative for the month
-6. electricity, today - cummulatief for the year
+- gas, today
+- gas, today - cummulative for the month
+- gas, today - cummulatief for the year
+- electricity, today
+- electricity, today - cummulative for the month
+- electricity, today - cummulatief for the year
 You can select which of the plafond you want to use.
 
 Instructions for using this script
@@ -27,13 +27,17 @@ Instructions for using this script
       {% endif %}
 ```
 This way you can format the presentation in the dashboard (2 decimals in the case) and prevent 0's in the history due to unknown values on startup.
-5. Create and automation the runs every day just after midnight, runs on reload of the template sensors and restart of HA.
+
+5. Create and automation the runs every day just after midnight, runs on reload of the template sensors or automations and restart of HA.
 ```
 alias: plafonds update
 description: ""
 trigger:
   - platform: event
     event_type: event_template_reloaded
+    event_data: {}
+  - platform: event
+    event_type: automation_reloaded
     event_data: {}
   - platform: homeassistant
     event: start
@@ -51,3 +55,5 @@ action:
       electriciteitplafond_dag: sensor.electriciteitsplafond_dag
 mode: restart
 ```
+
+6. Reload the automation.
