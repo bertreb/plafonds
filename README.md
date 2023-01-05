@@ -57,3 +57,5 @@ mode: restart
 ```
 
 6. Reload the automation.
+7. The sensor values should be updated to todays values
+
