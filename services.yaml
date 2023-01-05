@@ -1,0 +1,40 @@
+plafonds:
+  name: plafonds vandaag
+  description: Gas en electriciteit plafonds van vandaag in 2023.
+  fields:
+    gasplafond_dag:
+      description: Gasplafond dag entity.
+      example: gasp
+      required: false
+      selector:
+        entity:
+    gasplafond_maand_cummulatief:
+      description: Gasplafond maand cummulatief entity.
+      example: gasp
+      required: false
+      selector:
+        entity:
+    gasplafond_jaar_cummulatief:
+      description: Gasplafond jaar cummulatief entity.
+      example: gasp
+      required: false
+      selector:
+        entity:
+    electriciteitplafond_dag:
+      description: Electriciteitplafond dag entity.
+      example: gasp
+      required: false
+      selector:
+        entity:
+    electriciteitplafond_maand_cummulatief:
+      description: Electriciteitplafond maand cummulatief entity.
+      example: gasp
+      required: false
+      selector:
+        entity:
+    electriciteitplafond_jaar_cummulatief:
+      description: Electriciteitplafond jaar cummulatief entity.
+      example: gasp
+      required: false
+      selector:
+        entity:
