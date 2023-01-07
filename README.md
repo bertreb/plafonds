@@ -8,6 +8,7 @@ This script can generate 6 todays plafonds for gas and electricity.
 - electricity, today
 - electricity, today - cummulative for the month
 - electricity, today - cummulatief for the year
+
 You can select which of the plafond you want to use.
 
 Instructions for using this script
