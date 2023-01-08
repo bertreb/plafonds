@@ -61,6 +61,7 @@ action:
       electriciteitplafond_dag: sensor.electriciteitsplafond_dag
 mode: restart
 ```
+The example above is with all the 6 sensors. Use in the data list only the sensor entities you have created.
 
 6. Reload the automation (development tool->yaml-configuration -> reload automations)
 7. The sensor values should be updated to todays plafond values
