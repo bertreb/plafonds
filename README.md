@@ -28,6 +28,10 @@ Instructions for using this script
       {% endif %}
 ```
 This way you can format the presentation in the dashboard (2 decimals in the case) and prevent 0's in the history due to unknown values on startup.
+Don't forget to put an include to template.yaml in your config.yaml. Thgis is one way to do this:
+```
+template: !include template.yaml
+```
 
 5. Create and automation the runs every day just after midnight, runs on reload of the template sensors or automations and restart of HA.
 ```
